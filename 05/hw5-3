@@ -1,0 +1,9 @@
+   141	2:22	clear
+   142	2:22	cp /usr/include/stdio.h .
+   144	2:22	head -50 stdio.x > stdio.y
+   146	2:22	cat stdio.[y-z] > stdio.w
+   147	2:22	\rm stdio.[w-z]
+   148	2:23	history
+   149	2:23	cp stdio.h stdio.x
+   151	2:24	tail -50 stdio.x > stdio.z
+   152	2:24	history 15 > hw5-3

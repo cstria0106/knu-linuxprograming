@@ -1,0 +1,6 @@
+[1]   Running                 sleep 100000 &
+[2]+  Stopped                 sleep 200000
+[3]-  Running                 sleep 300000 &
+[2]+  Stopped                 sleep 200000
+[3]-  Running                 sleep 300000 &
+[3]+  Running                 sleep 300000 &

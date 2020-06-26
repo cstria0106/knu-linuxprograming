@@ -1,0 +1,53 @@
+linux_unix:
+total 0
+drwxrwx---. 3 cs19479 cs19479 33 Apr  7 14:32 dirA
+drwx------. 4 cs19479 cs19479 32 Apr  7 14:16 dirB
+drwxr-xr--. 2 cs19479 cs19479  6 Apr  7 14:16 dirC
+drwxr-xr--. 4 cs19479 cs19479 33 Apr  7 15:01 dirD
+-rw-r--r--. 1 cs19479 cs19479  0 Apr  7 14:25 file1
+-rw-------. 1 cs19479 cs19479  0 Apr  7 14:25 file2
+
+linux_unix/dirA:
+total 0
+drwxr-xr-x. 2 cs19479 cs19479 6 Apr  7 14:56 dirAA
+-rwxr-xr-x. 1 cs19479 cs19479 0 Apr  7 14:31 fileA1
+
+linux_unix/dirA/dirAA:
+total 0
+
+linux_unix/dirB:
+total 0
+drwx------. 3 cs19479 cs19479 20 Apr  7 14:57 dirAB
+drwxr-xr-x. 2 cs19479 cs19479  6 Apr  7 14:57 dirBC
+
+linux_unix/dirB/dirAB:
+total 0
+drwx------. 3 cs19479 cs19479 36 Apr  7 14:38 dirAAB
+
+linux_unix/dirB/dirAB/dirAAB:
+total 0
+dr-xr--r--. 2 cs19479 cs19479 23 Apr  7 14:46 dirAAAB
+-rw-r-xr--. 1 cs19479 cs19479  0 Apr  7 14:38 fileAAB
+
+linux_unix/dirB/dirAB/dirAAB/dirAAAB:
+total 0
+-r----x--x. 1 cs19479 cs19479 0 Apr  7 14:46 fileAAAB1
+
+linux_unix/dirB/dirBC:
+total 0
+
+linux_unix/dirC:
+total 0
+
+linux_unix/dirD:
+total 0
+dr-xr-xr--. 2 cs19479 cs19479 20 Apr  7 15:01 dLinux
+dr-xr-xr-x. 2 cs19479 cs19479 19 Apr  7 15:01 dUnix
+
+linux_unix/dirD/dLinux:
+total 0
+-rw-r-xr-x. 1 cs19479 cs19479 0 Apr  7 14:53 fLinux
+
+linux_unix/dirD/dUnix:
+total 0
+---x--x--x. 1 cs19479 cs19479 0 Apr  7 14:48 fUnix

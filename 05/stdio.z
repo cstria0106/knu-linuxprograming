@@ -1,0 +1,50 @@
+/* Write formatted output to an obstack.  */
+extern int obstack_printf (struct obstack *__restrict __obstack,
+			   const char *__restrict __format, ...)
+     __THROWNL __attribute__ ((__format__ (__printf__, 2, 3)));
+extern int obstack_vprintf (struct obstack *__restrict __obstack,
+			    const char *__restrict __format,
+			    _G_va_list __args)
+     __THROWNL __attribute__ ((__format__ (__printf__, 2, 0)));
+#endif /* Use GNU.  */
+
+
+#if defined __USE_POSIX || defined __USE_MISC
+/* These are defined in POSIX.1:1996.  */
+
+/* Acquire ownership of STREAM.  */
+extern void flockfile (FILE *__stream) __THROW;
+
+/* Try to acquire ownership of STREAM but do not block if it is not
+   possible.  */
+extern int ftrylockfile (FILE *__stream) __THROW __wur;
+
+/* Relinquish the ownership granted for STREAM.  */
+extern void funlockfile (FILE *__stream) __THROW;
+#endif /* POSIX || misc */
+
+#if defined __USE_XOPEN && !defined __USE_XOPEN2K && !defined __USE_GNU
+/* The X/Open standard requires some functions and variables to be
+   declared here which do not belong into this header.  But we have to
+   follow.  In GNU mode we don't do this nonsense.  */
+# define __need_getopt
+# include <getopt.h>
+#endif	/* X/Open, but not issue 6 and not for GNU.  */
+
+/* If we are compiling with optimizing read this file.  It contains
+   several optimizing inline functions and macros.  */
+#ifdef __USE_EXTERN_INLINES
+# include <bits/stdio.h>
+#endif
+#if __USE_FORTIFY_LEVEL > 0 && defined __fortify_function
+# include <bits/stdio2.h>
+#endif
+#ifdef __LDBL_COMPAT
+# include <bits/stdio-ldbl.h>
+#endif
+
+__END_DECLS
+
+#endif /* <stdio.h> included.  */
+
+#endif /* !_STDIO_H */
